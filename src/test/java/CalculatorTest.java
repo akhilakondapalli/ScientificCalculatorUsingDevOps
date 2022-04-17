@@ -7,15 +7,17 @@ public class CalculatorTest {
 
     @Test
     public void squareRootTruePositive() {
-        assertEquals("Finding square root number for True positive", 5.0, calculator.squareRoot(25), DELTA);
-        assertEquals("Finding square root number for True positive", 3.0, calculator.squareRoot(9), DELTA);
+        assertEquals("True positive test for Square root of given input", 5.0, calculator.squareRoot(25), DELTA);
+        assertEquals("True positive test for Square root of given input", 3.0, calculator.squareRoot(9), DELTA);
+      
     }
 
     @Test
-    public void squareRootTrueNegative() {
-        assertNotEquals("Finding square root number for True Negative", 5.0, calculator.squareRoot(144), DELTA);
-        assertNotEquals("Finding square root number for True Negative", 3.0, calculator.squareRoot(1000), DELTA);
+    public void squareRootFalsePositive() {
+        assertNotEquals("False positive test for Square root of given input", 5.0, calculator.squareRoot(144), DELTA);
+        assertNotEquals("False positive test for Square root of given input", 3.0, calculator.squareRoot(1000), DELTA);
     }
+  
 
 
 
