@@ -67,6 +67,7 @@ public class Calculator {
                     }
                     System.out.println("Logarithm of " + number3 + " is " + calculator.logarithm(number3));
                     break;
+                
                     default:
                     System.out.println("Exiting !!!");
                     return;
@@ -111,6 +112,7 @@ public class Calculator {
          return Double.NaN;
         
     }
+    
 
 
 }

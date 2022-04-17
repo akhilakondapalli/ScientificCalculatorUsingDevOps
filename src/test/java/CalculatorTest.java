@@ -37,7 +37,7 @@ public class CalculatorTest {
     public void logarithmTruePositive() {
         assertEquals("True positive test for logarithm of given input", 2.484906649788, calculator.logarithm(12), DELTA);
         assertEquals("True positive test for logarithm of given input", Double.NaN, calculator.logarithm(-5), DELTA);
-        assertEquals("True positive test for logarithm of given input", Double.NEGATIVE_INFINITY, calculator.logarithm(0), DELTA);
+        assertEquals("True positive test for logarithm of given input", Double.NaN, calculator.logarithm(0), DELTA);
         assertEquals("True positive test for logarithm of given input", 4.605170185988092, calculator.logarithm(100), DELTA);
     }
 
